@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles//style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wraper">
+        <header class="header" id="main-header">
+            <div class="header__contacts-line">
+                <img src="assets/img/icons/Address.png" alt="adresse icon" class="header__icon">
+                <span class="header__text">XX rue du Villaret, 7200 Le Mans</span>
+                <img src="assets/img/icons/calendar-solid-full.svg" alt="calendriericon" class="header__icon">
+                <span class="header__text"> Lun–Ven, 10h–19h</span>
+                <img src="assets/img/icons/phone-white.png" alt="téléphone_icon" class="header__icon">
+                <span class="header__text">02.00.00.00.00</span>
+                <img src="assets/img/icons/Chat Bubble_white.png" alt="whatswpp tchat icon" class="header__icon">
+                <span class="header__text">WhatsApp : 02.00.00.00.00</span>
+            </div>
+            <div class="header__menu-line">
+                <div class="header__logo">
+                    <img class="header__logo-icon" src="assets/img/icons/logo.svg" alt="logo">
+                </div>
+                <nav class="header__menu">
+                    <list class="header__menu-list">
+                        <li class="header__menu-item"><a href="" class="header__menu-link">Vehicules</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-link">Atelier</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-link">A propos</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-link">Contact</a></li>
+                    </list>
+                </nav>
+            </div>
+        </header>
+
+        <div class="hero">
+            <div class="hero__overlay">
+
+            </div>
+            <div class="hero__content">
+                <div class="hero__text">
+                    <div class="hero__title">
+                        Achat et vente<br>
+                        de vehicules d'occasion
+                    </div>
+                    <div class="hero__items">
+                        <div class="hero__item">
+                            <img src="assets/img/icons/Ok.svg" alt="OK">
+                            Prix ​​équitable
+                        </div>
+                        <div class="hero__item">
+                            <img src="assets/img/icons/Ok.svg" alt="OK">
+                            Garantie de 2 mois
+                        </div>
+                        <div class="hero__item">
+                            <img src="assets/img/icons/Ok.svg" alt="OK">
+                            Carte grise sur place
+                        </div>
+                        <div class="hero__item">
+                            <img src="assets/img/icons/Ok.svg" alt="OK">
+                            Livraison de vehicule
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__form">
+                    <form action="search.php">
+                        <div class="hero__inputs-container">
+                            <div>
+                                <label for="brand"></label>
+                                <select name="brand" id="brand" class="hero__input">
+                                    <option value="alfa-romeo">Marque</option>
+                                    <option value="alfa-romeo">Alfa Romeo</option>
+                                    <option value="bmw">BMW</option>
+                                    <option value="chevrolet">Chevrolet</option>
+                                    <option value="citroën">Citroën</option>
+                                    <option value="ford">Ford</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="peugeot">Peugeot</option>
+                                    <option value="renault">Renault</option>
+                                    <option value="volkswagen">Volkswagen</option>
+                                </select>
+                                <label for="proce"></label>
+                                <select name="price" id="price" class="hero__input">
+                                    <option value="">Prix</option>
+                                    <option value="0-3000">Moins de 3 000 €</option>
+                                    <option value="3000-6000">3 000 – 6 000 €</option>
+                                    <option value="6000-10000">6 000 – 10 000 €</option>
+                                    <option value="10001">Plus de 10 000 €</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="year"></label>
+                                <select name="year" id="year" class="hero__input">
+                                    <option value="">Année</option>
+                                    <option value="1990">1990 et avant</option>
+                                    <option value="1995">1995 et avant</option>
+                                    <option value="2000">2000 et avant</option>
+                                    <option value="2005">2005 et avant</option>
+                                    <option value="2010">2010 et avant</option>
+                                    <option value="2015">2015 et avant</option>
+                                    <option value="2020">2020 et avant</option>
+                                    <option value="2021">2021 et plus</option>
+                                </select>
+                                <select name="mileage" id="mileage" class="hero__input">
+                                    <option value="">Kilométrage</option>
+                                    <option value="50000">50 000 km et moins</option>
+                                    <option value="100000">100 000 km et moins</option>
+                                    <option value="150000">150 000 km et moins</option>
+                                    <option value="200000">200 000 km et moins</option>
+                                    <option value="250000">250 000 km et moins</option>
+                                    <option value="300000">300 000 km et moins</option>
+                                    <option value="300001">Plus de 300 000 km</option>
+                                </select>
+                                <div>
+                                    <select name="fuel" id="fuel" class="hero__input">
+                                        <option value="">Carburant</option>
+                                        <option value="essence">Essence</option>
+                                        <option value="diesel">Diesel</option>
+                                        <option value="hybride">Hybride</option>
+                                        <option value="electrique">Électrique</option>
+                                    </select>
+                                    <select name="gearbox" id="gearbox" class="hero__input">
+                                        <option value="">Boîte</option>
+                                        <option value="manuelle">Manuelle</option>
+                                        <option value="automatique">Automatique</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="hero__btn" id="find">
+                                Trouver mon futur véhicule
+                            </button>
+                            <span class="or">ou</span>
+                            <button class="hero__btn" id="all">
+                                Voir tous nos véhicules
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section class="cars">
+            <h2>Dernières arrivées</h2>
+            <div class="cars__card-container">
+                <div class="cars__card">
+                    <div class="cars__img-container">
+                        <img src="assets/img/content/01/01.jpg" alt="Alfa Romeo 147">
+                        <div class="cars__specs">
+                            <div class="cars__price">
+                                1 300 €
+                            </div>
+                            <div class="cars__brand">
+                                Alfa Romeo 147
+                            </div>
+                            <div class="cars__year">
+                                2004
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cars__card">
+
+                </div>
+                <div class="cars__card">
+
+                </div>
+                <div class="cars__card">
+
+                </div>
+            </div>
+            <a href="#" class="inner-link">Voir tous nos véhicules <img src="assets/img/icons/link_arrow.svg"
+                    alt=""></a>
+        </section>
+
+</body>
+
+</html>
