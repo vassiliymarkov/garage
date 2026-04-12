@@ -1,0 +1,34 @@
+.footer {
+    margin-top: 50px;
+    color: #000000;
+}
+
+hr {
+    width: 95%;
+    height: 2px;
+    background-color: #000000;
+}
+.footer__upper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    font-size: var(--font-size-xxsmall);
+}
+.footer__upper li {
+    line-height: 20px;
+}
+.footer__link {
+    font-size: var(--font-size-xxsmall);
+    color: #000000;
+    text-decoration: underline;
+}
+.footer__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 30px 0;
+}
+.footer__bottom p {
+    
+}

@@ -1,0 +1,23 @@
+:root {
+    /* colors */
+    --color-light: #F5F5F5;
+    --color-dark-blue: #0C243F;
+    --color-accent: #448016;
+    --color-bg-slightly-yellow: #FEFBC3;
+
+    /* fonts */
+    --font-main: "Roboto", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+    --font-size-xxsmall: 15px;
+    --font-size-xsmall: 16px;
+    --font-size-small: 18px;
+    --font-size-normal: 20px;
+    --font-size-large: 24px;
+    --font-size-xlarge: 30px;
+    --font-size-xxlarge: 40px;
+
+    /* margins and paddings */
+    --section-margin-top: 30px;
+    --block-margin-top: 20px;
+
+}

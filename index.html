@@ -3,6 +3,7 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,27 +13,43 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/styles//style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 
     <title>Document</title>
 </head>
 
 <body>
-    <div class="wraper">
+
+    <div class="wrapper">
         <header class="header" id="main-header">
             <div class="header__contacts-line">
-                <img src="assets/img/icons/Address.png" alt="adresse icon" class="header__icon">
-                <span class="header__text">XX rue du Villaret, 7200 Le Mans</span>
-                <img src="assets/img/icons/calendar-solid-full.svg" alt="calendriericon" class="header__icon">
-                <span class="header__text"> Lun–Ven, 10h–19h</span>
-                <img src="assets/img/icons/phone-white.png" alt="téléphone_icon" class="header__icon">
-                <span class="header__text">02.00.00.00.00</span>
-                <img src="assets/img/icons/Chat Bubble_white.png" alt="whatswpp tchat icon" class="header__icon">
-                <span class="header__text">WhatsApp : 02.00.00.00.00</span>
+                <div>
+                    <img src="assets/img/icons/Address.png" alt="adresse icon" class="header__icon" id="address">
+                    <span class="header__text" id="address-text">XX rue du Villaret, 7200 Le Mans</span>
+                </div>
+                <div>
+                    <img src="assets/img/icons/calendar-solid-full.svg" alt="calendrier icon" class="header__icon"
+                        id="calendar">
+                    <span class="header__text" id="calendar-text"> Lun–Ven, 10h–19h</span>
+                </div>
+                <div>
+                    <img src="assets/img/icons/phone-white.png" alt="téléphone_icon" class="header__icon">
+                    <span class="header__text">02.00.00.00.00</span>
+                </div>
+                <div>
+                    <img src="assets/img/icons/Chat Bubble_white.png" alt="whatswpp tchat icon" class="header__icon">
+                    <span class="header__text"><span id="whatsapp__text">WhatsApp : </span>02.00.00.00.00</span>
+                </div>
             </div>
             <div class="header__menu-line">
+
                 <div class="header__logo">
                     <img class="header__logo-icon" src="assets/img/icons/logo.svg" alt="logo">
+                </div>
+                <div class="header__burger">
+                    <span class="header__burger-bar" id="header__burger-bar-1"></span>
+                    <span class="header__burger-bar" id="header__burger-bar-2"></span>
+                    <span class="header__burger-bar" id="header__burger-bar-3"></span>
                 </div>
                 <nav class="header__menu">
                     <list class="header__menu-list">
@@ -56,98 +73,106 @@
                         de vehicules d'occasion
                     </div>
                     <div class="hero__items">
-                        <div class="hero__item">
-                            <img src="assets/img/icons/Ok.svg" alt="OK">
-                            Prix ​​équitable
+                        <div>
+                            <div class="hero__item">
+                                <img src="assets/img/icons/Ok.svg" alt="OK">
+                                Prix ​​équitable
+                            </div>
+                            <div class="hero__item">
+                                <img src="assets/img/icons/Ok.svg" alt="OK">
+                                Garantie de 2 mois
+                            </div>
                         </div>
-                        <div class="hero__item">
-                            <img src="assets/img/icons/Ok.svg" alt="OK">
-                            Garantie de 2 mois
-                        </div>
-                        <div class="hero__item">
-                            <img src="assets/img/icons/Ok.svg" alt="OK">
-                            Carte grise sur place
-                        </div>
-                        <div class="hero__item">
-                            <img src="assets/img/icons/Ok.svg" alt="OK">
-                            Livraison de vehicule
+                        <div>
+                            <div class="hero__item">
+                                <img src="assets/img/icons/Ok.svg" alt="OK">
+                                Carte grise sur place
+                            </div>
+                            <div class="hero__item">
+                                <img src="assets/img/icons/Ok.svg" alt="OK">
+                                Livraison de vehicule
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="hero__form">
-                    <form action="search.php">
-                        <div class="hero__inputs-container">
-                            <div>
-                                <label for="brand"></label>
-                                <select name="brand" id="brand" class="hero__input">
-                                    <option value="alfa-romeo">Marque</option>
-                                    <option value="alfa-romeo">Alfa Romeo</option>
-                                    <option value="bmw">BMW</option>
-                                    <option value="chevrolet">Chevrolet</option>
-                                    <option value="citroën">Citroën</option>
-                                    <option value="ford">Ford</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="peugeot">Peugeot</option>
-                                    <option value="renault">Renault</option>
-                                    <option value="volkswagen">Volkswagen</option>
-                                </select>
-                                <label for="proce"></label>
-                                <select name="price" id="price" class="hero__input">
-                                    <option value="">Prix</option>
-                                    <option value="0-3000">Moins de 3 000 €</option>
-                                    <option value="3000-6000">3 000 – 6 000 €</option>
-                                    <option value="6000-10000">6 000 – 10 000 €</option>
-                                    <option value="10001">Plus de 10 000 €</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="year"></label>
-                                <select name="year" id="year" class="hero__input">
-                                    <option value="">Année</option>
-                                    <option value="1990">1990 et avant</option>
-                                    <option value="1995">1995 et avant</option>
-                                    <option value="2000">2000 et avant</option>
-                                    <option value="2005">2005 et avant</option>
-                                    <option value="2010">2010 et avant</option>
-                                    <option value="2015">2015 et avant</option>
-                                    <option value="2020">2020 et avant</option>
-                                    <option value="2021">2021 et plus</option>
-                                </select>
-                                <select name="mileage" id="mileage" class="hero__input">
-                                    <option value="">Kilométrage</option>
-                                    <option value="50000">50 000 km et moins</option>
-                                    <option value="100000">100 000 km et moins</option>
-                                    <option value="150000">150 000 km et moins</option>
-                                    <option value="200000">200 000 km et moins</option>
-                                    <option value="250000">250 000 km et moins</option>
-                                    <option value="300000">300 000 km et moins</option>
-                                    <option value="300001">Plus de 300 000 km</option>
-                                </select>
-                                <div>
-                                    <select name="fuel" id="fuel" class="hero__input">
-                                        <option value="">Carburant</option>
-                                        <option value="essence">Essence</option>
-                                        <option value="diesel">Diesel</option>
-                                        <option value="hybride">Hybride</option>
-                                        <option value="electrique">Électrique</option>
-                                    </select>
-                                    <select name="gearbox" id="gearbox" class="hero__input">
-                                        <option value="">Boîte</option>
-                                        <option value="manuelle">Manuelle</option>
-                                        <option value="automatique">Automatique</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <button class="hero__btn" id="find">
-                                Trouver mon futur véhicule
-                            </button>
-                            <span class="or">ou</span>
-                            <button class="hero__btn" id="all">
-                                Voir tous nos véhicules
-                            </button>
+
+                <form class="hero__form" action="search.php">
+                    <div class="hero__inputs-container">
+                        <div class="hero__row">
+                            <label for="year" class="visually-hidden"></label>
+                            <select name="brand" id="brand" class="hero__input">
+                                <option value="alfa-romeo">Marque</option>
+                                <option value="alfa-romeo">Alfa Romeo</option>
+                                <option value="bmw">BMW</option>
+                                <option value="chevrolet">Chevrolet</option>
+                                <option value="citroën">Citroën</option>
+                                <option value="ford">Ford</option>
+                                <option value="opel">Opel</option>
+                                <option value="peugeot">Peugeot</option>
+                                <option value="renault">Renault</option>
+                                <option value="volkswagen">Volkswagen</option>
+                            </select>
+                            <label for="year" class="visually-hidden"></label>
+                            <select name="price" id="price" class="hero__input">
+                                <option value="">Prix</option>
+                                <option value="0-3000">Moins de 3 000 €</option>
+                                <option value="3000-6000">3 000 – 6 000 €</option>
+                                <option value="6000-10000">6 000 – 10 000 €</option>
+                                <option value="10001">Plus de 10 000 €</option>
+                            </select>
                         </div>
-                    </form>
-                </div>
+                        <div class="hero__row">
+                            <label for="year" class="visually-hidden"></label>
+                            <select name="year" id="year" class="hero__input">
+                                <option value="">Année</option>
+                                <option value="1990">1990 et avant</option>
+                                <option value="1995">1995 et avant</option>
+                                <option value="2000">2000 et avant</option>
+                                <option value="2005">2005 et avant</option>
+                                <option value="2010">2010 et avant</option>
+                                <option value="2015">2015 et avant</option>
+                                <option value="2020">2020 et avant</option>
+                                <option value="2021">2021 et plus</option>
+                            </select>
+                            <label for="year" class="visually-hidden"></label>
+                            <select name="mileage" id="mileage" class="hero__input">
+                                <option value="">Kilométrage</option>
+                                <option value="50000">50 000 km et moins</option>
+                                <option value="100000">100 000 km et moins</option>
+                                <option value="150000">150 000 km et moins</option>
+                                <option value="200000">200 000 km et moins</option>
+                                <option value="250000">250 000 km et moins</option>
+                                <option value="300000">300 000 km et moins</option>
+                                <option value="300001">Plus de 300 000 km</option>
+                            </select>
+                        </div>
+                        <div class="hero__row">
+                            <label for="year" class="visually-hidden"></label>
+                            <select name="fuel" id="fuel" class="hero__input">
+                                <option value="">Carburant</option>
+                                <option value="essence">Essence</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="hybride">Hybride</option>
+                                <option value="electrique">Électrique</option>
+                            </select>
+                            <label for="year" class="visually-hidden"></label>
+                            <select name="gearbox" id="gearbox" class="hero__input">
+                                <option value="">Boîte</option>
+                                <option value="manuelle">Manuelle</option>
+                                <option value="automatique">Automatique</option>
+                            </select>
+                        </div>
+
+                        <button class="hero__btn" id="find">
+                            Trouver mon futur véhicule
+                        </button>
+                        <span class="or">ou</span>
+                        <button class="hero__btn" id="all">
+                            Voir tous nos véhicules
+                        </button>
+                    </div>
+                </form>
+
             </div>
         </div>
 
@@ -171,18 +196,148 @@
                     </div>
                 </div>
                 <div class="cars__card">
-
+                    <div class="cars__img-container">
+                        <img src="assets/img/content/01/01.jpg" alt="Alfa Romeo 147">
+                        <div class="cars__specs">
+                            <div class="cars__price">
+                                1 300 €
+                            </div>
+                            <div class="cars__brand">
+                                Alfa Romeo 147
+                            </div>
+                            <div class="cars__year">
+                                2004
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="cars__card">
-
+                    <div class="cars__img-container">
+                        <img src="assets/img/content/01/01.jpg" alt="Alfa Romeo 147">
+                        <div class="cars__specs">
+                            <div class="cars__price">
+                                1 300 €
+                            </div>
+                            <div class="cars__brand">
+                                Alfa Romeo 147
+                            </div>
+                            <div class="cars__year">
+                                2004
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="cars__card">
-
+                    <div class="cars__img-container">
+                        <img src="assets/img/content/01/01.jpg" alt="Alfa Romeo 147">
+                        <div class="cars__specs">
+                            <div class="cars__price">
+                                1 300 €
+                            </div>
+                            <div class="cars__brand">
+                                Alfa Romeo 147
+                            </div>
+                            <div class="cars__year">
+                                2004
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="#" class="inner-link">Voir tous nos véhicules <img src="assets/img/icons/link_arrow.svg"
-                    alt=""></a>
+            <a href="#">Voir tous nos véhicules</a>
         </section>
+
+        <section class="services">
+            <h2>Services</h2>
+            <div class="services__cards-container">
+                <div class="services__card">
+                    <img src="assets/img/icons/Car repair.png" id="Services__card-icon1"
+                        alt="reparation de vevicule icon">
+                    <span class="services__card-title">
+                        Réparation & entretien
+                    </span>
+                    <span class="services__card-text">
+                        Mécanique, entretien et diagnostics
+                    </span>
+                </div>
+                <div class="services__card">
+                    <img src="assets/img/icons/reprise.png" id="Services__card-icon2" alt="reparation de vevicule icon">
+                    <span class="services__card-title">
+                        Reprise de véhicules
+                    </span>
+                    <span class="services__card-text">
+                        Estimation et rachat de votre véhicule
+                    </span>
+                </div>
+                <div class="services__card">
+                    <img src="assets/img/icons/Car tag.png" id="Services__card-icon1" alt="reparation de vevicule icon">
+                    <span class="services__card-title">
+                        Vente de véhicules d’occasion
+                    </span>
+                    <span class="services__card-text">
+                        Véhicules contrôlés et préparés
+                    </span>
+                </div>
+            </div>
+            <section class="trust">
+                <h2>Pourquoi nous faire confiance</h2>
+                <h4>Expérience du métier</h4>
+                <p>Plusieurs années d’expérience en mécanique et vente de véhicules d’occasion</p>
+                <h4>Véhicules contrôlés avant la vente</h4>
+                <p>Chaque véhicule est vérifié et préparé avant sa mise en vente</p>
+                <h4>Garage local et indépendant</h4>
+                <p>Un interlocuteur unique, proche de chez vous</p>
+                <h4>Prix clairs et expliqués</h4>
+                <p>Pas de frais cachés, les prestations sont expliquées à l’avance</p>
+                <h4>Accompagnement administratif</h4>
+                <p>Aide pour les démarches liées à l’achat ou à la reprise</p>
+            </section>
+            <section class="about">
+                <h2>A propos du garagee</h2>
+                <div class="about__img">
+                    <img src="assets/img/content/garage.jpg" alt="garage">
+                    <p>
+                        Garage indépendant spécialisé dans la réparation, la reprise et la vente de véhicules
+                        d’occasion.
+                    </p>
+                    <p>
+                        Nous accompagnons nos clients à chaque étape, de l’entretien du véhicule jusqu’à l’achat ou la
+                        reprise, avec une approche simple et transparente.
+                    </p>
+                </div>
+            </section>
+
+            <section class="cta">
+                <h2>Besoin de conseils pour l’achat ou la reprise de votre véhicule ?</h2>
+                <a href="contacta.html" id="cta__redirect">Prendre contact</a>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <hr>
+            <div class="footer__upper">
+                <ul>
+                    <li>Téléphone : 02.00.00.00.00</li>
+                    <li>WhatsApp : 02.00.00.00.00</li>
+                    <li>Adresse : XX Rue du Villaret, 7200 Le Mans</li>
+                    <li>Horaires : Lun–Ven, 10h–19h</li>
+                </ul>
+                <ul>
+                    <li><a href="" class="footer__link">Mentions légales</a></li>
+                    <li><a href="" class="footer__link">Politique de confidentialité</a></li>
+                    <li><a href="" class="footer__link">CGV</a></li>
+                    <li><a href="" class="footer__link">CGU</a></li>
+                    <li><a href="" class="footer__link">Données personnelles</a></li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <p>2025 Garage</p>
+                <p>Site réalisé par <a href="">web-street.fr</a></p>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="assets/scripts/script.js" defer></script>
 
 </body>
 

@@ -1,0 +1,19 @@
+body {
+    font-family: var(--font-main);
+    font-size: var(--normal);
+    color: var(--color-dark-blue);
+}
+h2 {
+    /* font-size: var(--font-size-xlarge); */
+    font-size: clamp(30px, 4vw, 40px);
+    font-weight: 600;
+}
+h3 {
+    font-size: var(--font-size-xlarge);
+}
+h4 {
+    font-size: var( --font-size-small);
+}
+p {
+    font-size: var(--font-size-xsmall);
+}
