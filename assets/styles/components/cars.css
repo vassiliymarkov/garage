@@ -3,6 +3,7 @@
     grid-template-columns: 1fr;
     gap: 24px;
     margin: var(--block-margin-top) auto 20px auto;
+    justify-items: center;
 }
 
 .cars__card {
