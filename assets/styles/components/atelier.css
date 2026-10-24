@@ -1,0 +1,18 @@
+.atelier__stages {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.atelier__title {
+    font-size: var(--font-size-normal);
+    margin-top: 10px;
+}
+.atelier__stages p {
+    font-size: var(--font-size-small);
+}
+
+.atelier__inreventions,
+.atelier__process {
+    margin-top: 20px;
+}

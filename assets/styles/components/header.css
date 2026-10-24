@@ -1,18 +1,26 @@
 .header {
     background-color: var(--color-dark-blue);
     padding: 10px;
+    max-width: 1920px;
     height: 120px;
+    margin: 0 auto;
 }
+
 .header__contacts-line {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
     margin-bottom: 20px;
 }
+
 .header__menu-line {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 .header__icon {
     width: 20px;
     height: 20px;
@@ -21,6 +29,7 @@
 .header__text {
     color: #ffffff;
 }
+
 #address,
 #address-text,
 #calendar,
@@ -32,6 +41,7 @@
 .header__logo-icon {
     width: 100px;
 }
+
 .header__menu {
     position: fixed;
     width: 100%;
@@ -44,9 +54,11 @@
     z-index: 3;
     pointer-events: auto;
 }
+
 .header__menu--active {
     left: 0;
 }
+
 .header__menu-list {
     display: flex;
     flex-direction: column;
@@ -56,11 +68,13 @@
     font-family: var(--font-secondary);
     font-size: var(--font-size-normal);
 }
+
 .header__menu-item {
     gap: 10px;
 }
+
 .header__menu-link {
-     color: #ffffff;
+    color: #ffffff;
 }
 
 .header__burger {
@@ -70,9 +84,9 @@
     align-items: center;
     width: 20px;
     height: 16px;
-   /*  margin: 0 20px 0 0px; */
+    /*  margin: 0 20px 0 0px; */
     position: relative;
-    
+
 }
 
 .header__burger-bar {
@@ -98,4 +112,48 @@
 
 #header__burger-bar-3.clicked {
     transform: rotate(45deg) translate(-4px, -3px);
+}
+
+/* media */
+
+@media(min-width: 1200px) {
+    .header__contacts-line {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    #address,
+    #address-text,
+    #calendar,
+    #calendar-text,
+    #whatsapp__text {
+        display: inline;
+    }
+
+    .header__menu-line {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header__menu {
+        position: static;
+        left: auto;
+        width: auto;
+    }
+
+    .header__menu-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+        font-family: var(--font-secondary);
+        font-size: var(--font-size-normal);
+    }
+
+    .header__burger {
+        display: none;
+    }
 }

@@ -1,7 +1,9 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    max-width: 1920px;
+    height: calc(100vh - 120px);
+    margin: 0 auto;
     font-family: 'Inter';
     background-image: url("../../img/content/main-hero.webp");
     background-size: cover;
@@ -21,7 +23,6 @@
 .hero__content {
     z-index: 2;
     color: #ffffff;
-    font-size: 50px;
     position: absolute;
     top: 5%;
     padding: 0 30px;
@@ -34,17 +35,18 @@
 
 .hero__text {
     width: 100%;
-
 }
 
 .hero__title {
-    font-size: clamp(22px, 23px, 30px);
+    font-size: 23px;
     font-weight: 600;
 }
 
 .hero__items {
-    margin-top: 30px;
+    margin-top: 10px;
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero__items img {
@@ -59,15 +61,16 @@
     align-items: center;
     font-size: 18px;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .hero__form {
     background-color: #477524;
     opacity: 0.7;
     width: 100%;
-    max-width: 700px;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
+    align-self: center;
 }
 
 .hero__inputs-container {
@@ -75,7 +78,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .hero__row {
@@ -112,11 +115,11 @@
 .hero__btn {
     background-color: #448016;
     width: 100%;
-    height: 38px;
+    height: 30px;
     border: 3px solid #ffffff;
     border-radius: 8px;
     font-family: 'Inter';
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #ffffff;
 }
@@ -135,4 +138,167 @@
     font-size: 16px;
     font-weight: 600;
     color: #ffffff;
+}
+
+/* media */
+@media(min-width: 480px) {
+    .hero__title {
+        font-size: 30px;
+    }
+}
+
+@media(min-width:640px) {
+    .hero__title {
+        font-size: 20px;
+    }
+
+    .hero__items {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px 0 20px;
+    }
+
+    .hero__form {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+}
+
+@media(min-width:768px) {
+    .hero__content {
+        top: 10%;
+    }
+
+    .hero__title {
+        font-size: 50px;
+    }
+
+    .hero__items {
+        margin-top: 30px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__item {
+        font-size: 35px;
+    }
+
+    .hero__form {
+        margin-top: 100px;
+    }
+}
+
+@media(min-width:991px) {
+    .hero__content {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .hero__text {
+        width: 50%;
+    }
+
+    .hero__form {
+        width: 50%;
+        margin-top: 230px;
+    }
+
+    .hero__items {
+        margin-top: 100px;
+    }
+
+    .hero__item {
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 1920px) {
+    .hero__title {
+        font-size: 70px;
+    }
+
+    .hero__items {
+        margin-top: 200px;
+    }
+
+    .hero__item {
+        font-size: 50px;
+    }
+
+    .hero__input {
+        font-size: 24px;
+        min-height: 28px;
+    }
+
+    .hero__form {
+        margin-top: 350px;
+    }
+}
+
+@media(min-width: 2560px) {
+    .hero__content {
+        z-index: 2;
+        color: #ffffff;
+        position: absolute;
+        top: 15%;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .hero__title {
+        font-size: 70px;
+        font-weight: 600;
+    }
+
+    .hero__items {
+        margin-top: 30px;
+    }
+
+    .hero__items img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero__item {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .hero__form {
+        width: 100%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .hero__inputs-container {
+        gap: 15px;
+    }
+
+    .hero__input {
+        height: 23px;
+        font-size: 24px;
+
+    }
+
+    .hero__btn {
+        width: 100%;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .hero__btn:hover {
+        background-color: #90cf60;
+        color: #0C243F;
+    }
+
+    .or {
+        font-size: 24px;
+    }
+
 }

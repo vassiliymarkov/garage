@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header" id="main-header">
+            <div class="header__contacts-line">
+                <div>
+                    <img src="assets/img/icons/Address.png" alt="adresse icon" class="header__icon" id="address">
+                    <span class="header__text" id="address-text">XX rue du Villaret, 7200 Le Mans</span>
+                </div>
+                <div>
+                    <img src="assets/img/icons/calendar-solid-full.svg" alt="calendrier icon" class="header__icon"
+                        id="calendar">
+                    <span class="header__text" id="calendar-text"> Lun–Ven, 10h–19h</span>
+                </div>
+                <div>
+                    <img src="assets/img/icons/phone-white.png" alt="téléphone_icon" class="header__icon">
+                    <span class="header__text">02.00.00.00.00</span>
+                </div>
+                <div>
+                    <img src="assets/img/icons/Chat Bubble_white.png" alt="whatswpp tchat icon" class="header__icon">
+                    <span class="header__text"><span id="whatsapp__text">WhatsApp : </span>02.00.00.00.00</span>
+                </div>
+            </div>
+            <div class="header__menu-line">
+                <div class="header__logo">
+                    <img class="header__logo-icon" src="assets/img/icons/logo.svg" alt="logo">
+                </div>
+                <div class="header__burger">
+                    <span class="header__burger-bar" id="header__burger-bar-1"></span>
+                    <span class="header__burger-bar" id="header__burger-bar-2"></span>
+                    <span class="header__burger-bar" id="header__burger-bar-3"></span>
+                </div>
+                <nav class="header__menu">
+                    <list class="header__menu-list">
+                        <li class="header__menu-item"><a href="" class="header__menu-link">Vehicules</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-link">Atelier</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-link">A propos</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-link">Contact</a></li>
+                    </list>
+                </nav>
+            </div>
+        </header>
+
+        <section class="search">
+            <h2>Véhicules d’occasion</h2>
+            <h4>Des voitures révisées, garanties et disponibles immédiatement</h4>
+
+            <h3 class="search__title">
+                Filtrer votre recherche
+            </h3>
+
+            <form class="search__form">
+                <div class="search__flex">
+                    <div class="search__line">
+                        <div class="search__field">
+                            <label for="budget">
+                                <b>Budget</b> (prix max)
+                            </label>
+                            <input type="number" id="budget">
+                        </div>
+
+                        <div class="search__field">
+                            <label for="brand">
+                                <b>Marque</b>
+                            </label>
+                            <select id="brand" name="brand">
+                                <option value=""></option>
+                            </select>
+                        </div>
+
+                        <div class="search__field--short">
+                            <label>
+                                <b>Année</b>
+                            </label>
+                            <div class="search__range">
+                                <input type="number" placeholder="de">
+                                <input type="number" placeholder="à">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search__line">
+                        <div class="search__field--short">
+                            <label>
+                                <b>Kilométrage</b>
+                            </label>
+                            <div class="search__range">
+                                <input type="number" placeholder="de">
+                                <input type="number" placeholder="à">
+                            </div>
+                        </div>
+
+                        <div class="search__field">
+                            <label for="fuel">
+                                <b>Carburant</b>
+                            </label>
+                            <select id="fuel" name="fuel">
+                                <option value=""></option>
+                            </select>
+                        </div>
+
+                        <div class="search__field">
+                            <label for="transmission">
+                                <b>Boîte</b>
+                            </label>
+                            <select id="transmission" name="transmission">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="search__btn">
+                    Rechercher
+                </button>
+            </form>
+        </section>
+        <section class="cars">
+            <h2>Dernières arrivées</h2>
+            <div class="cars__card-container">
+                <div class="cars__card">
+                    <div class="cars__img-container">
+                        <img src="assets/img/content/01/01.jpg" alt="Alfa Romeo 147">
+                        <div class="cars__specs">
+                            <div class="cars__price">
+                                1 300 €
+                            </div>
+                            <div class="cars__brand">
+                                Alfa Romeo 147
+                            </div>
+                            <div class="cars__year">
+                                2004
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cars__card">
+                    <div class="cars__img-container">
+                        <img src="assets/img/content/01/01.jpg" alt="Alfa Romeo 147">
+                        <div class="cars__specs">
+                            <div class="cars__price">
+                                1 300 €
+                            </div>
+                            <div class="cars__brand">
+                                Alfa Romeo 147
+                            </div>
+                            <div class="cars__year">
+                                2004
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cars__card">
+                    <div class="cars__img-container">
+                        <img src="assets/img/content/01/01.jpg" alt="Alfa Romeo 147">
+                        <div class="cars__specs">
+                            <div class="cars__price">
+                                1 300 €
+                            </div>
+                            <div class="cars__brand">
+                                Alfa Romeo 147
+                            </div>
+                            <div class="cars__year">
+                                2004
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cars__card">
+                    <div class="cars__img-container">
+                        <img src="assets/img/content/01/01.jpg" alt="Alfa Romeo 147">
+                        <div class="cars__specs">
+                            <div class="cars__price">
+                                1 300 €
+                            </div>
+                            <div class="cars__brand">
+                                Alfa Romeo 147
+                            </div>
+                            <div class="cars__year">
+                                2004
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="cars__h2">Nos véhicules d’occasion au Mans</h2>
+            <p>
+                Nous proposons une sélection de véhicules d’occasion au Mans, soigneusement choisis et destinés à
+                des
+                conducteurs à la recherche d’une voiture fiable et accessible. Toutes nos voitures d’occasion sont
+                contrôlées et préparées avant la mise en vente, afin de garantir une utilisation en toute sérénité.
+            </p>
+            <p>
+                En tant que garage automobile au Mans, nous accompagnons nos clients dans leur projet d’achat avec
+                transparence, que vous recherchiez une voiture d’occasion pas chère, un véhicule pour un usage
+                quotidien ou
+                une solution adaptée à votre budget. Chaque véhicule présenté dispose d’informations claires
+                concernant le
+                kilométrage, l’année, le carburant et la transmission.
+            </p>
+            <p>
+                Grâce aux filtres disponibles, vous pouvez facilement affiner votre recherche parmi nos véhicules
+                d’occasion
+                en Sarthe selon vos critères. N’hésitez pas à nous contacter pour toute question ou pour organiser
+                une
+                visite au garage.
+            </p>
+        </section>
+
+        <footer class="footer">
+            <hr>
+            <div class="footer__upper">
+                <ul>
+                    <li>Téléphone : 02.00.00.00.00</li>
+                    <li>WhatsApp : 02.00.00.00.00</li>
+                    <li>Adresse : XX Rue du Villaret, 7200 Le Mans</li>
+                    <li>Horaires : Lun–Ven, 10h–19h</li>
+                </ul>
+                <ul>
+                    <li><a href="" class="footer__link">Mentions légales</a></li>
+                    <li><a href="" class="footer__link">Politique de confidentialité</a></li>
+                    <li><a href="" class="footer__link">CGV</a></li>
+                    <li><a href="" class="footer__link">CGU</a></li>
+                    <li><a href="" class="footer__link">Données personnelles</a></li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <p>2025 Garage</p>
+                <p>Site réalisé par <a href="">web-street.fr</a></p>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/scripts/script.js" defer></script>
+
+</body>
+
+</html>

@@ -28,7 +28,7 @@
                     <span class="header__text" id="address-text">XX rue du Villaret, 7200 Le Mans</span>
                 </div>
                 <div>
-                    <img src="assets/img/icons/calendar-solid-full.svg" alt="calendrier icon" class="header__icon"
+                    <img src="assets/img/icons/calendar-solid-full.png" alt="calendrier icon" class="header__icon"
                         id="calendar">
                     <span class="header__text" id="calendar-text"> Lun–Ven, 10h–19h</span>
                 </div>
@@ -42,7 +42,6 @@
                 </div>
             </div>
             <div class="header__menu-line">
-
                 <div class="header__logo">
                     <img class="header__logo-icon" src="assets/img/icons/logo.svg" alt="logo">
                 </div>
@@ -52,12 +51,12 @@
                     <span class="header__burger-bar" id="header__burger-bar-3"></span>
                 </div>
                 <nav class="header__menu">
-                    <list class="header__menu-list">
-                        <li class="header__menu-item"><a href="" class="header__menu-link">Vehicules</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-link">Atelier</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-link">A propos</a></li>
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="#cars" class="header__menu-link">Vehicules</a></li>
+                        <li class="header__menu-item"><a href="#services" class="header__menu-link">Atelier</a></li>
+                        <li class="header__menu-item"><a href="#about" class="header__menu-link">A propos</a></li>
                         <li class="header__menu-item"><a href="" class="header__menu-link">Contact</a></li>
-                    </list>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -74,23 +73,27 @@
                     </div>
                     <div class="hero__items">
                         <div>
-                            <div class="hero__item">
-                                <img src="assets/img/icons/Ok.svg" alt="OK">
-                                Prix ​​équitable
-                            </div>
-                            <div class="hero__item">
-                                <img src="assets/img/icons/Ok.svg" alt="OK">
-                                Garantie de 2 mois
+                            <div>
+                                <div class="hero__item">
+                                    <img src="assets/img/icons/Ok.svg" alt="OK">
+                                    Prix ​​équitable
+                                </div>
+                                <div class="hero__item">
+                                    <img src="assets/img/icons/Ok.svg" alt="OK">
+                                    Garantie de 2 mois
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <div class="hero__item">
-                                <img src="assets/img/icons/Ok.svg" alt="OK">
-                                Carte grise sur place
-                            </div>
-                            <div class="hero__item">
-                                <img src="assets/img/icons/Ok.svg" alt="OK">
-                                Livraison de vehicule
+                            <div>
+                                <div class="hero__item">
+                                    <img src="assets/img/icons/Ok.svg" alt="OK">
+                                    Carte grise sur place
+                                </div>
+                                <div class="hero__item">
+                                    <img src="assets/img/icons/Ok.svg" alt="OK">
+                                    Livraison de vehicule
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -134,7 +137,7 @@
                                 <option value="2020">2020 et avant</option>
                                 <option value="2021">2021 et plus</option>
                             </select>
-                            <label for="year" class="visually-hidden"></label>
+                            <label for="mileage" class="visually-hidden"></label>
                             <select name="mileage" id="mileage" class="hero__input">
                                 <option value="">Kilométrage</option>
                                 <option value="50000">50 000 km et moins</option>
@@ -147,7 +150,7 @@
                             </select>
                         </div>
                         <div class="hero__row">
-                            <label for="year" class="visually-hidden"></label>
+                            <label for="fuel" class="visually-hidden"></label>
                             <select name="fuel" id="fuel" class="hero__input">
                                 <option value="">Carburant</option>
                                 <option value="essence">Essence</option>
@@ -155,7 +158,7 @@
                                 <option value="hybride">Hybride</option>
                                 <option value="electrique">Électrique</option>
                             </select>
-                            <label for="year" class="visually-hidden"></label>
+                            <label for="gearbo" class="visually-hidden"></label>
                             <select name="gearbox" id="gearbox" class="hero__input">
                                 <option value="">Boîte</option>
                                 <option value="manuelle">Manuelle</option>
@@ -176,7 +179,7 @@
             </div>
         </div>
 
-        <section class="cars">
+        <section class="cars" id="cars">
             <h2>Dernières arrivées</h2>
             <div class="cars__card-container">
                 <div class="cars__card">
@@ -247,7 +250,7 @@
             <a href="#">Voir tous nos véhicules</a>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <h2>Services</h2>
             <div class="services__cards-container">
                 <div class="services__card">
@@ -270,7 +273,7 @@
                     </span>
                 </div>
                 <div class="services__card">
-                    <img src="assets/img/icons/Car tag.png" id="Services__card-icon1" alt="reparation de vevicule icon">
+                    <img src="assets/img/icons/Car tag.png" id="Services__card-icon3" alt="reparation de vevicule icon">
                     <span class="services__card-title">
                         Vente de véhicules d’occasion
                     </span>
@@ -292,7 +295,7 @@
                 <h4>Accompagnement administratif</h4>
                 <p>Aide pour les démarches liées à l’achat ou à la reprise</p>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <h2>A propos du garagee</h2>
                 <div class="about__img">
                     <img src="assets/img/content/garage.jpg" alt="garage">
