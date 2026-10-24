@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let burgerBarTwo = document.querySelector('#header__burger-bar-2');
     let burgerBarThree = document.querySelector('#header__burger-bar-3');
     let body = document.querySelector('body');
+    let menuLink = document.querySelectorAll('.header__menu-link');
 
     burger.addEventListener('click', () => {
         mobileMenu.classList.toggle('header__menu--active');
@@ -16,6 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.toggle('menu-open');
     });
 
-    console.log(burgerBarOne);
+    menuLink.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('header__menu--active');
+            burgerBarOne.classList.remove('clicked');
+            burgerBarTwo.classList.remove('clicked');
+            burgerBarThree.classList.remove('clicked');
+            body.classList.remove('menu-open');
+        });
+    });
 });
-
+``
