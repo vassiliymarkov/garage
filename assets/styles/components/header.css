@@ -7,12 +7,14 @@
 }
 
 .header__contacts-line {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 5px;
     margin-bottom: 20px;
+    padding: 0;
 }
 
 .header__menu-line {
@@ -30,13 +32,11 @@
     color: #ffffff;
 }
 
-#address,
-#address-text,
-#calendar,
-#calendar-text,
-#whatsapp__text {
+.header__contact-address,
+.header__contact-calendar {
     display: none;
 }
+
 
 .header__logo-icon {
     width: 100px;
