@@ -4,10 +4,12 @@
     flex-direction: column;
     gap: 15px;
 }
+
 .atelier__title {
     font-size: var(--font-size-normal);
     margin-top: 10px;
 }
+
 .atelier__stages p {
     font-size: var(--font-size-small);
 }
@@ -15,4 +17,68 @@
 .atelier__inreventions,
 .atelier__process {
     margin-top: 20px;
+}
+
+.atelier__cards {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.atelier__cards::before {
+    position: absolute;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: var(--color-dark-blue);
+    transform: translateX(-50%);
+}
+
+.timeline {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+}
+
+.timeline__card {
+    width: 300px;
+    height: 200px;
+    background-color: #f7f2a1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+}
+
+.timeline__card p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.timeline__card li {
+    list-style: inside;
+    font-size: 16px;
+}
+
+.atelier__contact h4 {
+    margin-bottom: 30px;
+}
+
+.atelier__contact a {
+    background-color: var(--color-accent);
+    padding: 5px 25px;
+    color: #ffffff;
+}
+
+.atelier__contact a:hover {
+    background-color: var(--color-accent-hover);
+    color: #000000;
 }

@@ -117,6 +117,13 @@
 
 /* media */
 
+@media(min-width: 480px) {
+    .header__contacts-line {
+    justify-content: start;
+    gap: 25px;
+    }
+}
+
 @media(min-width: 1200px) {
     .header__contacts-line {
         flex-direction: row;
@@ -125,30 +132,30 @@
         margin-bottom: 20px;
     }
 
-    #address,
-    #address-text,
-    #calendar,
-    #calendar-text,
-    #whatsapp__text {
-        display: inline;
-    }
+.header__contact-address,
+.header__contact-calendar {
+    display: inline;
+}
 
     .header__menu-line {
         width: 100%;
+        height: auto;
         justify-content: space-between;
+        align-items: center;
     }
 
     .header__menu {
         position: static;
         left: auto;
         width: auto;
+        /* height: 55px; */
     }
 
     .header__menu-list {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
         gap: 30px;
         font-family: var(--font-secondary);
         font-size: var(--font-size-normal);
