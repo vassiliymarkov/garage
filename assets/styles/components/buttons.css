@@ -1,0 +1,22 @@
+.button {
+    background-color: var(--color-accent);
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.button:hover {
+    opacity: 90%;
+    color: #000000;
+}
+
+.button--link {
+    background-color: var(--color-accent);
+    padding: 5px 25px;
+    color: #ffffff;
+}
+
+.button--link:hover {
+    background-color: var(--color-accent-hover);
+    color: #000000;
+    text-decoration: none;
+}

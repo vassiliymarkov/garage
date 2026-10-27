@@ -2,9 +2,11 @@
     padding: 10px;
     background-color: #F3F2F2;
 }
+
 .search__title {
-        margin-top: 20px;
-    }
+    margin-top: 20px;
+}
+
 .search__flex {
     display: flex;
     flex-direction: column;
@@ -35,16 +37,8 @@
     width: 49%;
 }
 
-.search__btn {
-    background-color: var(--color-accent);
-    color: #ffffff;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.search__btn:hover {
-    opacity: 90%;
-    color: #000000;
+#search__btn {
+    width: 100px;
 }
 
 /* media */

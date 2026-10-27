@@ -1,3 +1,7 @@
+.atelier {
+    position: relative;
+}
+
 .atelier__stages {
     margin: 15px 0;
     display: flex;
@@ -72,7 +76,7 @@
     margin-bottom: 30px;
 }
 
-.atelier__contact a {
+/* .atelier__contact a {
     background-color: var(--color-accent);
     padding: 5px 25px;
     color: #ffffff;
@@ -81,4 +85,4 @@
 .atelier__contact a:hover {
     background-color: var(--color-accent-hover);
     color: #000000;
-}
+} */

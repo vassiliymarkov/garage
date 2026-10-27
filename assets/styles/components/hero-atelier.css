@@ -1,0 +1,202 @@
+.heroAtelier {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: calc(100vh - 120px);
+    margin: 0 auto;
+    font-family: 'Inter';
+    background-image: url("../../img/content/atelier-hero.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.heroAtelier__overlay {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 2;
+    position: absolute;
+    inset: 0;
+}
+
+.heroAtelier__content {
+    z-index: 2;
+    color: #ffffff;
+    position: absolute;
+    top: 5%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.heroAtelier__text {
+    width: 100%;
+}
+
+.heroAtelier__title {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.heroAtelier__subtitle {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.heroAtelier__items {
+    margin-top: 30px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroAtelier__items img {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.heroAtelier__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* media */
+@media(min-width: 480px) {
+    .heroAtelier__title {
+        font-size: 30px;
+    }
+}
+
+@media(min-width:640px) {
+    .heroAtelier__title {
+        font-size: 20px;
+    }
+
+    .heroAtelier__items {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px 0 20px;
+    }
+
+    .heroAtelier__form {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+}
+
+@media(min-width:768px) {
+    .heroAtelier__content {
+        top: 10%;
+    }
+
+    .heroAtelier__title {
+        font-size: 50px;
+    }
+
+    .heroAtelier__items {
+        margin-top: 30px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heroAtelier__item {
+        font-size: 35px;
+    }
+
+    .heroAtelier__form {
+        margin-top: 100px;
+    }
+}
+
+@media(min-width:991px) {
+    .heroAtelier__content {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .heroAtelier__text {
+        width: 50%;
+    }
+
+    .heroAtelier__form {
+        width: 50%;
+        margin-top: 230px;
+    }
+
+    .heroAtelier__items {
+        margin-top: 100px;
+    }
+
+    .heroAtelier__item {
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 1920px) {
+    .heroAtelier__title {
+        font-size: 70px;
+    }
+
+    .heroAtelier__items {
+        margin-top: 200px;
+    }
+
+    .heroAtelier__item {
+        font-size: 50px;
+    }
+
+    .heroAtelier__input {
+        font-size: 24px;
+        min-height: 28px;
+    }
+
+    .heroAtelier__form {
+        margin-top: 350px;
+    }
+}
+
+@media(min-width: 2560px) {
+    .heroAtelier__content {
+        z-index: 2;
+        color: #ffffff;
+        position: absolute;
+        top: 15%;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .heroAtelier__title {
+        font-size: 70px;
+        font-weight: 600;
+    }
+
+    .heroAtelier__items {
+        margin-top: 30px;
+    }
+
+    .heroAtelier__items img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .heroAtelier__item {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    }
