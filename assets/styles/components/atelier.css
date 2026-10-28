@@ -53,7 +53,7 @@
 .timeline__card {
     width: 300px;
     height: 200px;
-    background-color: #f7f2a1;
+    background-color: var(--color-bg-slightly-yellow);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -75,14 +75,3 @@
 .atelier__contact h4 {
     margin-bottom: 30px;
 }
-
-/* .atelier__contact a {
-    background-color: var(--color-accent);
-    padding: 5px 25px;
-    color: #ffffff;
-}
-
-.atelier__contact a:hover {
-    background-color: var(--color-accent-hover);
-    color: #000000;
-} */
